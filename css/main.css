@@ -454,7 +454,26 @@ ul.nostyle i {
 }
 #about {
   padding: 100px 0;
+  background: #3b7256;
+  color: white;
 }
+#about h2 {
+  color: white;
+}
+
+#about .column-title:after {
+  content: " ";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 40%;
+  border-bottom: 1px solid #484b48;
+}
+
+#about ul.nostyle i {
+  color: #ffffff;
+}
+
 #work-process {
   padding: 100px 0 50px;
   background: #20222e url(../images/work-process/bg.jpg) no-repeat 0 0;

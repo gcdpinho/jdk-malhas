@@ -8,7 +8,7 @@ jQuery(function ($) {
 
 	$('.navbar-collapse ul li a').on('click', function () {
 		$('html, body').animate({
-			scrollTop: $(this.hash).offset().top - 5
+			scrollTop: $(this.hash).offset().top - 105
 		}, 1000);
 		return false;
 	});
@@ -20,13 +20,13 @@ jQuery(function ($) {
 		var winTop = $(window).scrollTop();
 		var rangeTop = 200;
 		var rangeBottom = 500;
-		$('.navbar-collapse').find('.scroll a').each(function () {
+		$('.navbar-collapse').find('.nav-item a').each(function () {
 			contentTop.push($($(this).attr('href')).offset().top);
 			contentBottom.push($($(this).attr('href')).offset().top + $($(this).attr('href')).height());
 		})
 		$.each(contentTop, function (i) {
 			if (winTop > contentTop[i] - rangeTop) {
-				$('.navbar-collapse li.scroll')
+				$('.navbar-collapse li.nav-item a')
 					.removeClass('active')
 					.eq(i).addClass('active');
 			}
@@ -48,6 +48,23 @@ jQuery(function ($) {
 
 		$(this).closest('.panel-heading').toggleClass('active');
 	});
+
+	//Map
+	function init_map1() {
+		var myLocation = new google.maps.LatLng(-26.935072,-48.9395491);
+		var mapOptions = {
+			center: myLocation,
+			zoom: 16
+		};
+		var marker = new google.maps.Marker({
+			position: myLocation,
+			title: "Property Location"
+		});
+		var map = new google.maps.Map(document.getElementById("map1"),
+			mapOptions);
+		marker.setMap(map);
+	}
+	init_map1();
 
 	//Slider
 	$(document).ready(function () {
