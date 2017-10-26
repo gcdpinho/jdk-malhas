@@ -286,7 +286,7 @@ header.masthead .intro-text .skills {
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(24, 188, 156, 0.9);
+  background: #2d6444;
 }
 
 #portfolio .portfolio-item .portfolio-link .caption:hover {
@@ -685,4 +685,20 @@ fieldset[disabled] .btn-success:hover {
   max-height: 470px;
   width: 100%;
   height: 100%;
+}
+
+section#main-slider {
+  padding: 119px 0 0 0;
+}
+
+#portfolio, .portfolio-modal, .section-header .section-title:before {
+  background: #2d6444;
+}
+#portfolio, .portfolio-modal, .section-header .section-title:after{
+  border: 5px solid #2d6444;
+  background: #ffffff;
+}
+
+.section-header h2 {
+  visibility: visible !important;
 }
