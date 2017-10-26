@@ -688,13 +688,13 @@ fieldset[disabled] .btn-success:hover {
 }
 
 section#main-slider {
-  padding: 119px 0 0 0;
+  padding: 112px 0 0 0;
 }
 
-#portfolio, .portfolio-modal, .section-header .section-title:before {
+#portfolio .section-header .section-title:before, .portfolio-modal .section-header .section-title:before {
   background: #2d6444;
 }
-#portfolio, .portfolio-modal, .section-header .section-title:after{
+#portfolio .section-header .section-title:after, .portfolio-modal .section-header .section-title:after{
   border: 5px solid #2d6444;
   background: #ffffff;
 }
