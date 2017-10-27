@@ -8,7 +8,7 @@ jQuery(function ($) {
 
 	$('.navbar-collapse ul li a').on('click', function () {
 		$('html, body').animate({
-			scrollTop: $(this.hash).offset().top - 111
+			scrollTop: $(this.hash).offset().top - 116.5
 		}, 1000);
 		return false;
 	});
@@ -249,4 +249,5 @@ jQuery(function ($) {
 		$("#contato").css('margin-top', $("#map1").height() + 50);
 	}
 
+	$('section#main-slider').css('padding-top', $('nav.navbar').height());
 });
