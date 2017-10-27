@@ -95,6 +95,16 @@ section.success {
 }
 
 @media (max-width: 767px) {
+  .portfolio-modal .close-modal .lr .rl, .portfolio-modal .close-modal .lr {
+    height: 35px !important;
+  }
+
+  .portfolio-modal .close-modal{
+    right: 0 !important;
+  }
+  
+
+
   #mainNav .navbar-brand{
     width: 40% !important;
   }
@@ -328,7 +338,7 @@ header.masthead .intro-text .skills {
 }
 
 #portfolio * {
-  z-index: 2;
+  z-index: 5;
 }
 
 @media (min-width: 767px) {
@@ -350,15 +360,11 @@ header.masthead .intro-text .skills {
   box-shadow: none;
 }
 
-.modal-dialog{
-  height: 100%;
-}
-
 .portfolio-modal .modal-dialog .modal-content {
   padding: 50px 0;
   border: 0;
   border-radius: 0;
-  height: 100%;
+  min-height: 100%;
 }
 
 .portfolio-modal .modal-dialog .modal-content h2 {
@@ -382,6 +388,7 @@ header.masthead .intro-text .skills {
   height: 75px;
   cursor: pointer;
   background-color: transparent;
+  z-index: 5;
 }
 
 .portfolio-modal .close-modal:hover {

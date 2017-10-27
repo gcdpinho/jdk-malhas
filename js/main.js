@@ -8,7 +8,7 @@ jQuery(function ($) {
 
 	$('.navbar-collapse ul li a').on('click', function () {
 		$('html, body').animate({
-			scrollTop: $(this.hash).offset().top - 116.5
+			scrollTop: $(this.hash).offset().top - 117
 		}, 1000);
 		return false;
 	});
