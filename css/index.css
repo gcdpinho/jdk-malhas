@@ -81,7 +81,7 @@ hr.star-primary:after {
 }
 
 section {
-  padding: 113px 0;
+  padding: 100px 0;
 }
 
 section h2 {
@@ -103,6 +103,10 @@ section.success {
   }
   #mainNav {
     padding-bottom: 10px !important;
+  }
+  
+  #empresa-malhas{
+    margin-top: 2em;
   }
 }
 
@@ -701,4 +705,12 @@ section#main-slider {
 
 .section-header h2 {
   visibility: visible !important;
+}
+
+.fa.fa-check-square{
+  margin-right: 0.5em;
+}
+
+p.text-center.wow.fadeInDown.animated{
+  margin-top: 50px;
 }

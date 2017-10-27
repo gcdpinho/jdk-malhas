@@ -245,6 +245,8 @@ jQuery(function ($) {
 		social_tools: false
 	});
 
-
+	if($(window).width() < 768){
+		$("#contato").css('margin-top', $("#map1").height() + 50);
+	}
 
 });
