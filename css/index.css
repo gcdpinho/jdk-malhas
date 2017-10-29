@@ -744,11 +744,14 @@ p.text-center.wow.fadeInDown.animated{
 }
 
 .padding-slider-b{
-  padding-top: 1em;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .padding-slider{
-  padding: 1em;
+  padding-top: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
