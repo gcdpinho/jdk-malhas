@@ -749,9 +749,13 @@ p.text-center.wow.fadeInDown.animated{
   padding-right: 30px;
 }
 
-.padding-slider{
+.padding-slider-t{
   padding-top: 5px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
+}
+
+.padding-slider{
+  padding: 30px
 }
