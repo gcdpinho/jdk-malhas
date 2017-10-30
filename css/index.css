@@ -747,6 +747,7 @@ p.text-center.wow.fadeInDown.animated{
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
+  cursor: default;
 }
 
 .padding-slider-t{
@@ -754,8 +755,10 @@ p.text-center.wow.fadeInDown.animated{
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
+  cursor: default;
 }
 
 .padding-slider{
-  padding: 30px
+  padding: 30px;
+  cursor: default;
 }

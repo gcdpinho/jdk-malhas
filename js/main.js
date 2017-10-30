@@ -7,10 +7,22 @@ jQuery(function ($) {
 	});
 
 	$('.navbar-collapse ul li a').on('click', function () {
+		var offset = 5;
+		if ($(window).width() > 1024)
+			offset = 117;
+		else
+			if ($(window).width() <= 320)
+				offset = 82;
+			else
+				if ($(window).width() >= 768)
+					offset = 101;
+				else
+					offset = 92;
 		$('html, body').animate({
-			scrollTop: $(this.hash).offset().top - 117
+			scrollTop: $(this.hash).offset().top - offset
 		}, 1000);
 		return false;
+		
 	});
 
 	// User define function
@@ -31,6 +43,10 @@ jQuery(function ($) {
 					.eq(i).addClass('active');
 			}
 		})
+		if(($(window).scrollTop() + window.innerHeight == $(document).height()) && $(window).width() > 768) {
+			$('.nav-item').find('.nav-link[href="#about"]').removeClass('active');
+			$('.nav-item').find('.nav-link[href="#contact"]').addClass('active');
+		}
 	};
 
 	$('#tohash').on('click', function () {
@@ -250,4 +266,6 @@ jQuery(function ($) {
 	}
 
 	$('section#main-slider').css('padding-top', $('nav.navbar').height());
+
+	
 });
