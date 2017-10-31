@@ -11,18 +11,18 @@ jQuery(function ($) {
 		if ($(window).width() > 1024)
 			offset = 117;
 		else
-			if ($(window).width() <= 320)
-				offset = 82;
-			else
-				if ($(window).width() >= 768)
-					offset = 101;
-				else
-					offset = 92;
+		if ($(window).width() <= 320)
+			offset = 82;
+		else
+		if ($(window).width() >= 768)
+			offset = 101;
+		else
+			offset = 92;
 		$('html, body').animate({
 			scrollTop: $(this.hash).offset().top - offset
 		}, 1000);
 		return false;
-		
+
 	});
 
 	// User define function
@@ -43,7 +43,7 @@ jQuery(function ($) {
 					.eq(i).addClass('active');
 			}
 		})
-		if(($(window).scrollTop() + window.innerHeight == $(document).height()) && $(window).width() > 768) {
+		if (($(window).scrollTop() + window.innerHeight == $(document).height()) && $(window).width() > 768) {
 			$('.nav-item').find('.nav-link[href="#about"]').removeClass('active');
 			$('.nav-item').find('.nav-link[href="#contact"]').addClass('active');
 		}
@@ -67,14 +67,14 @@ jQuery(function ($) {
 
 	//Map
 	function init_map1() {
-		var myLocation = new google.maps.LatLng(-26.935072,-48.9395491);
+		var myLocation = new google.maps.LatLng(-26.935072, -48.9395491);
 		var mapOptions = {
 			center: myLocation,
 			zoom: 16
 		};
 		var marker = new google.maps.Marker({
 			position: myLocation,
-			title: "Property Location"
+			title: "JK'D Malhas"
 		});
 		var map = new google.maps.Map(document.getElementById("map1"),
 			mapOptions);
@@ -172,7 +172,7 @@ jQuery(function ($) {
 	smoothScroll.init();
 
 	// portfolio filter
-	$(window).on("load",function () {
+	$(window).on("load", function () {
 		'use strict';
 		var $portfolio_selectors = $('.portfolio-filter >li>a');
 		var $portfolio = $('.portfolio-items');
@@ -261,11 +261,55 @@ jQuery(function ($) {
 		social_tools: false
 	});
 
-	if($(window).width() < 768){
+	if ($(window).width() < 768) {
 		$("#contato").css('margin-top', $("#map1").height() + 50);
+	}
+
+	if ($(window).width() < 992){
+		$('.portfolio-link').removeAttr('href');
 	}
 
 	$('section#main-slider').css('padding-top', $('nav.navbar').height());
 
+	var titles = [$("#portfolioModal1").find('.section-title').text(),
+		$("#portfolioModal2").find('.section-title').text(),
+		$("#portfolioModal3").find('.section-title').text()
+	];
+	var imgs = [$("#portfolioModal1").find('.img-fluid').attr('src'),
+		$("#portfolioModal2").find('.img-fluid').attr('src'),
+		$("#portfolioModal3").find('.img-fluid').attr('src')
+	];
+	var indexPortifolio = 0;
+
+	$('.caption').click(function(){
+		indexPortifolio = parseInt($(this).closest('.portfolio-link').attr('href').split('#portfolioModal')[1]);
+		$('#portfolioModal'+indexPortifolio).find('.section-title').text(titles[indexPortifolio-1]);
+		$('#portfolioModal'+indexPortifolio).find('.img-fluid').attr('src', imgs[indexPortifolio-1]);
+	});
+
+	$('.previous').click(function () {
+		var port = $(this).closest('.portfolio-modal');
 	
+		if (indexPortifolio == 1)
+			indexPortifolio = 3;
+		else
+			indexPortifolio--;
+
+		port.find('.section-title').text(titles[indexPortifolio-1]);
+		port.find('.img-fluid').attr('src', imgs[indexPortifolio-1]);
+
+	});
+
+	$('.next').click(function () {
+		var port = $(this).closest('.portfolio-modal');
+	
+		if (indexPortifolio == 3)
+			indexPortifolio = 1;
+		else
+			indexPortifolio++;
+
+		port.find('.section-title').text(titles[indexPortifolio-1]);
+		port.find('.img-fluid').attr('src', imgs[indexPortifolio-1]);
+
+	});
 });

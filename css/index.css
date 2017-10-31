@@ -102,8 +102,6 @@ section.success {
   .portfolio-modal .close-modal{
     right: 0 !important;
   }
-  
-
 
   #mainNav .navbar-brand{
     width: 40% !important;
@@ -207,7 +205,9 @@ section.success {
 }
 
 @media (min-width: 992px) {
-
+  #portfolio .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+  }
   .top-bar {
     background-color: #3b7256;
     height: 40px;
@@ -313,9 +313,7 @@ header.masthead .intro-text .skills {
   background: #3b7256;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption:hover {
-  opacity: 1;
-}
+
 
 #portfolio .portfolio-item .portfolio-link .caption .caption-content {
   font-size: 20px;
@@ -474,7 +472,7 @@ header.masthead .intro-text .skills {
 }
 
 .floating-label-form-group-with-focus label {
-  color: #2d6444;
+  color: #3b7256;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -765,5 +763,35 @@ p.text-center.wow.fadeInDown.animated{
 
 .pdr-15{
   padding: 0 15px !important;
+  font-size: 20px;
+}
+
+i.fa.fa-whatsapp{
+  color: #3b7256;
+}
+
+.modal-dialog{
+  display: flex;
+  align-items: center;
+}
+
+.modal-content{
+  text-align: center;
+  margin: auto;
+}
+
+.arrow-next, .arrow-previous{
+  text-align: center;
+  align-items: center;
+  margin: auto;
+}
+
+i.fa.fa-chevron-right, i.fa.fa-chevron-left{
+  font-size: 4em;
+  cursor: pointer;
+}
+
+i.fa.fa-chevron-right:hover, i.fa.fa-chevron-left:hover{
+  color: #3b7256;
 }
 

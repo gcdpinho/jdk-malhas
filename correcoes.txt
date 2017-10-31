@@ -2,7 +2,8 @@ SERVIÇOS:
     - 3 fotos (tirar as de baixo); V
     - Parque fabril (dentro dos serviços);V
         - Galpão 2350 ..V
-    - Sem animação das fotos;
+    - Sem animação das fotos; V
+    - Opcional: visualizador de fotos (no lugar da animação). V
 
 EMPRESA:
     - Sem Parque Fabril; V
