@@ -67,7 +67,7 @@ jQuery(function ($) {
 
 	//Map
 	function init_map1() {
-		var myLocation = new google.maps.LatLng(-26.935072, -48.9395491);
+		var myLocation = new google.maps.LatLng(-26.9716093, -48.9145781);
 		var mapOptions = {
 			center: myLocation,
 			zoom: 16
@@ -312,4 +312,12 @@ jQuery(function ($) {
 		port.find('.img-fluid').attr('src', imgs[indexPortifolio-1]);
 
 	});
+
+	$('.portfolio-modal .close-modal').hover(function(){
+		$('.portfolio-modal .close-modal .lr').css("background-color", '#3b7256');
+		$('.portfolio-modal .close-modal .lr .rl').css("background-color", '#3b7256');
+	}, function(){
+		$('.portfolio-modal .close-modal .lr').css("background-color", '#212529');
+		$('.portfolio-modal .close-modal .lr .rl').css("background-color", '#212529');
+	});	
 });
