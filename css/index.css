@@ -762,3 +762,8 @@ p.text-center.wow.fadeInDown.animated{
   padding: 30px;
   cursor: default;
 }
+
+.pdr-15{
+  padding: 0 15px !important;
+}
+

@@ -854,6 +854,10 @@ ul.nostyle i {
   margin: 0 7.5px;
 }
 @media only screen and (min-width: 768px) {
+  #parque.column-title:after{
+    width: 30% !important;
+  }
+  
   #footer .social-icons {
     float: right;
   }
@@ -862,3 +866,5 @@ ul.nostyle i {
   box-shadow: none;
   -webkit-box-shadow: none;
 }
+
+
