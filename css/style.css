@@ -62,7 +62,7 @@
 }
 
 .carousel-content{
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 1em;
 }
 
@@ -1356,6 +1356,7 @@ footer .footer-above {
 
 footer .footer-col {
   margin-bottom: 50px;
+  width: 100%;
 }
 
 footer .footer-below {
@@ -1616,6 +1617,7 @@ p.text-center.wow.fadeInDown.animated{
   padding-right: 30px;
   padding-bottom: 30px;
   cursor: default;
+  line-height: 1.2;
 }
 
 .padding-slider{

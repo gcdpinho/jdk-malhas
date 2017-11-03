@@ -84,7 +84,7 @@ jQuery(function ($) {
 
 	//Slider
 	$(document).ready(function () {
-		var time = 7; // time in seconds
+		var time = 15; // time in seconds
 
 		var $progressBar,
 			$bar,
@@ -319,5 +319,6 @@ jQuery(function ($) {
 	}, function(){
 		$('.portfolio-modal .close-modal .lr').css("background-color", '#212529');
 		$('.portfolio-modal .close-modal .lr .rl').css("background-color", '#212529');
-	});	
+	});
+		
 });
