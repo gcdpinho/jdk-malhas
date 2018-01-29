@@ -1676,3 +1676,19 @@ i.fa.fa-chevron-right:hover, i.fa.fa-chevron-left:hover{
   height: 4px;
   background: white;
 }
+
+.footer-below p{
+  margin: 0;
+  display: inline;
+  font-size: 17px;
+}
+
+.vulpis{
+  color: white;
+}
+
+a.vulpis:hover {
+  font-weight: bold;
+  color: white !important;
+}
+
